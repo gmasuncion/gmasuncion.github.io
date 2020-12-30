@@ -149,7 +149,7 @@ img{
 }
 .home__title{
     align-self: flex-end;
-    font-size: var(--big-font-size);
+    font-size: 50px;
     color: var(--black-color);
     line-height: .8;
 }
@@ -246,6 +246,10 @@ img{
         text-align: initial;
         padding: 4rem 0;
     }
+}
+
+.txt-type > .txt{
+    border-right: 0.1rem solid rgb(104, 93, 93);
 }
 
 @media screen and (min-width: 1024px){
