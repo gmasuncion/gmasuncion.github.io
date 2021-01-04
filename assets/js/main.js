@@ -12,7 +12,7 @@ const TypeWriter = function(txtElement, words, wait = 3000){
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
-    this.wait = parseInt(wait, 10);
+    this.wait = parseInt(wait, 5);
     this.type();
     this.isDeleting = false;
 }
@@ -39,7 +39,7 @@ TypeWriter.prototype.type = function() {
 
     // logic that handles both the ending of a word and moving to the next word
     this.txtElement.innerHTML = `<span class ="txt">${this.txt}</span>`;
-    let typeSpeed = 300;
+    let typeSpeed = 250;
 
     if(this.isDeleting){
         typeSpeed /= 2;
@@ -52,7 +52,7 @@ TypeWriter.prototype.type = function() {
     else if (this.isDeleting && this.txt === ''){
         this.isDeleting = false;
         this.wordIndex ++;
-        typeSpeed = 500;
+        typeSpeed = 250;
     }
 
     setTimeout(() => this.type(), typeSpeed)
