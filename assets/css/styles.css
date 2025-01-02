@@ -1,6 +1,10 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 
+:emoji {
+    font-size: 24px; /* Adjust the size of emojis */
+}
+
 /*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
